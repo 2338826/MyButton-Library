@@ -12,17 +12,17 @@
 class MyButton
 {
 private:
-    int buttonGPIO;                 // GPIO pin for the button
-    int buttonDebounceDelay;        // Debounce delay in ms
-    int buttonLongPressDuration;    // Long press duration in ms
-    int buttonDoubleClickMaxDelay;  // Max delay for double click in ms
-    bool isPressed;                 // Button pressed state
-    bool lastRawState;              // Last raw state of the button
-    unsigned long lastDebounceTime; // Last debounce time
-    unsigned long pressStart;       // Time when press started
-    unsigned long lastReleaseTime;  // Time of last release
-    bool waitingSecondClick;        // Waiting for a second click
-    bool pendingSingleClick;        // Pending single click detection
+    int buttonGPIO;
+    int buttonDebounceDelay;
+    int buttonLongPressDuration;
+    int buttonDoubleClickMaxDelay;
+    bool isPressed;
+    bool lastRawState;
+    unsigned long lastDebounceTime;
+    unsigned long pressStart;
+    unsigned long lastReleaseTime;
+    bool waitingSecondClick;
+    bool pendingSingleClick;
 
 public:
     // Constructor
@@ -33,7 +33,6 @@ public:
     void setButtonLongPressDuration(int duration);
     void setButtonDoubleClickMaxDelay(int delay);
 
-    // Method to check button state
     int checkMyButton();
 };
 

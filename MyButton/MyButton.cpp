@@ -83,7 +83,7 @@ int MyButton::checkMyButton()
     {
         pendingSingleClick = false;
         waitingSecondClick = false;
-        return MYBUTTON_SHORT_CLICK; // Single click confirmed
+        return MYBUTTON_SHORT_CLICK;
     }
 
     return MYBUTTON_NO_CLICK;
